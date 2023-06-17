@@ -1,13 +1,11 @@
-# WordPress Management Script
+# Deploy wordpress using docker compose and shell script
 
-This script allows you to manage your WordPress site running in Docker containers. It provides functionality to enable, disable, and delete the site.
+
+This script allows you to manage your wordpress site running in docker containers. It provides functionality to enable, disable, and delete the site. Using this script it detects if docker is installed or not if not it will install also same with docker compose, later it will fetch require images and start configuring it.
 
 ## Prerequisites
 
-Make sure you have the following installed:
-
-- Docker
-- Docker Compose
+bash shell cmd.
 
 ## Usage
 
@@ -15,4 +13,8 @@ Make sure you have the following installed:
 
 2. Make the script executable:
    ```bash
-   chmod +x manage_wordpress.sh
+     chmod +x bash.sh
+     sudo ./bash.sh <website_name> <enable or disable or delete>
+   
+
+Using above script you can install docker if not present and launch wordpress website.
